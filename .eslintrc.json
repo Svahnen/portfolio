@@ -1,0 +1,24 @@
+{ 
+    "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "mocha": true
+  },
+  "globals": {
+    "expect": true
+  },
+    "extends": [
+      "standard",
+      "plugin:react/recommended"
+    ],
+    "plugins": [
+      "react",
+      "import",
+      "node",
+      "promise",
+      "standard",
+      "jsx-a11y",
+      "babel"
+    ]
+  }
