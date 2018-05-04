@@ -19,7 +19,7 @@ function coverScroll (e) {
 
 const Navigation = () => (
   <div>
-    <AppBar position="static" color="primary">
+    <AppBar position="static" style={{background: '#0e4f7e'}}>
       <Toolbar>
         <ul>
           <li className={styles.navList}><a onClick={coverScroll}>Home</a></li>

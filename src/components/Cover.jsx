@@ -5,6 +5,7 @@ import Button from 'material-ui/Button'
 import smoothScroll from 'smoothscroll'
 import arrowDownImg from '../images/arrow-down.png'
 
+// TODO: Use less particles on mobile
 const particleOptions = {
   params: {
     particles: {
