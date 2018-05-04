@@ -27,7 +27,6 @@ export default class AboutMe extends Component {
         {scroll > 300 ? <div className={styles.circleExpand}><p>Responsible</p></div> : <div className={styles.circleCompress}></div>}
         {scroll > 300 ? <div className={styles.circleExpand}><p>Fast learner</p></div> : <div className={styles.circleCompress}></div>}
         {scroll > 300 ? <div className={styles.circleExpand}><p>Thorough</p></div> : <div className={styles.circleCompress}></div>}
-        {scroll > 300 ? <div className={styles.circleExpand}><p>Responsive</p></div> : <div className={styles.circleCompress}></div>}
         {scroll > 300 ? <div className={styles.circleExpand}><p>Dynamic</p></div> : <div className={styles.circleCompress}></div>}
         </div>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates molestias architecto omnis laboriosam culpa nesciunt adipisci qui sequi veniam quam dolore facilis, asperiores, doloremque odit, earum voluptatem sint eius impedit.</p>
