@@ -16,13 +16,17 @@ export default class AboutMe extends Component {
   render () {
     const { scroll } = this.state
     return (
-      <div id={'AboutMe'}>
-
+      <div id={'AboutMe'} className={styles.wrapper}>
+          <div className={styles.content}>
             <h2 className={styles.title}>About me</h2>
             <span className={styles.spanLine}/>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, possimus iure repudiandae reprehenderit deserunt modi eum doloribus similique delectus tempora aperiam magni quia temporibus voluptas. Laboriosam libero iusto numquam voluptatem.</p>
+            <p>I learn  very fast and strive to always use or improve upon best practices. I code responsibly and apply a verry thorogh mindset when i code.</p>
+            <p>And i really love to code.</p>
+            <p>- Responsive of course!</p>
+          </div>
       </div>
     )
   }
+  //TODO: Use this to enable animations comming in from the side while scrolling
   handleInput = () => this.setState({ scroll: window.scrollY })
 }
