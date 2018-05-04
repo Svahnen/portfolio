@@ -3,6 +3,7 @@ import styles from './Cover.sass'
 import Particles from 'react-particles-js'
 import Button from 'material-ui/Button'
 import smoothScroll from 'smoothscroll'
+import arrowDownImg from '../images/arrow-down.png'
 
 const particleOptions = {
   params: {
@@ -38,11 +39,11 @@ const Cover = () => (
   <div className={styles.wrapper} id={'Cover'}>
     <Particles params={particleOptions.params} style={particleOptions.style} />
     <div className={styles.textWrapper}>
-      <h1 className={styles.text}>Hello, I'm Jonny Svahn.</h1>
-      <h1 className={styles.text}>I'm a front end developer student.</h1>
+      <h1 className={styles.text}>Hello, my name is Jonny</h1>
+      <h1 className={styles.text}>I'm a front end developer</h1>
       <div style={{display: 'flex', width: '100%', marginTop: '10px'}}>
-        <Button variant="fab" onClick={aboutMeScroll} color="primary" aria-label="add" style={{margin: 'auto'}}>
-          <div style={{marginTop: '3px'}}>&#x25BC;</div>
+        <Button style={{display: 'flex', width: '100%'}}>
+          <img src={arrowDownImg} className={styles.arrowDown} onClick={aboutMeScroll}/>
         </Button>
       </div>
     </div>
