@@ -12,7 +12,7 @@ import 'styles/base/_common.sass' // Global styles
 const App = () => (
   <div className='App'>
     <Cover />
-    {/*     <Navigation /> */}
+    <Navigation />
     <AboutMe />
     <WhyMe />
     <Techniques />
