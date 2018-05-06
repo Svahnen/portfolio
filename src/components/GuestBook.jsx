@@ -29,7 +29,7 @@ export default class GuestBook extends Component {
 
   render () {
     return (<div>
-      <Navigation />
+      <Navigation view='guestbook' />
       <TextField
           id="name"
           label="Enter your name"
