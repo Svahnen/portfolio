@@ -1,5 +1,4 @@
 import React from 'react'
-import Navigation from './components/Navigation'
 import Cover from './components/Cover'
 import AboutMe from './components/AboutMe'
 import WhyMe from './components/WhyMe'
@@ -12,7 +11,6 @@ import 'styles/base/_common.sass' // Global styles
 const App = () => (
   <div className='App'>
     <Cover />
-    <Navigation settings='guestbook' />
     <AboutMe />
     <WhyMe />
     <Techniques />

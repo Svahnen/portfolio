@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styles from './AboutMe.sass'
+import Navigation from '../components/Navigation'
 
 export default class AboutMe extends Component {
   constructor (props) {
@@ -17,6 +18,7 @@ export default class AboutMe extends Component {
     const { scroll } = this.state
     return (
       <div id={'AboutMe'} className={styles.wrapper}>
+      <Navigation />
           <div className={styles.content}>
             <h2 className={styles.title}>About me</h2>
             <span className={styles.spanLine}/>

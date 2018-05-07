@@ -43,8 +43,8 @@ const Cover = () => (
       <h1 className={styles.text}>Hello, my name is Jonny</h1>
       <h1 className={styles.text}>I'm a front end developer</h1>
       <div style={{display: 'flex', width: '100%', marginTop: '10px'}}>
-        <Button style={{display: 'flex', width: '100%'}}>
-          <img src={arrowDownImg} className={styles.arrowDown} onClick={aboutMeScroll}/>
+        <Button style={{display: 'flex', width: '100%'}} onClick={aboutMeScroll}>
+          <img src={arrowDownImg} className={styles.arrowDown} />
         </Button>
       </div>
     </div>
