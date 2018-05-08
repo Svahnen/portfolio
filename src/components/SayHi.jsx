@@ -20,7 +20,7 @@ export default class SayHi extends Component {
           <div className={styles.content}>
             <h2 className={styles.title}>Say hi!</h2>
             <span className={styles.spanLine}/>
-            <p>hello@jonnysvahn.se</p>
+            <a className={styles.mailto} href="mailto:hello@jonnysvahn.se">hello@jonnysvahn.se</a>
           </div>
           <p>All rights reserved Jonny Svahn 2018</p>
       </div>
