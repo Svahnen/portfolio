@@ -41,7 +41,7 @@ const Cover = () => (
     <Particles params={particleOptions.params} style={particleOptions.style} />
     <div className={styles.textWrapper}>
       <h1 className={styles.text}>Hello, my name is Jonny</h1>
-      <h1 className={styles.text}>I'm a front end developer</h1>
+      <h1 className={styles.text}>I'm a Front End developer</h1>
       <div style={{display: 'flex', width: '100%', marginTop: '10px'}}>
         <Button style={{display: 'flex', width: '100%'}} onClick={aboutMeScroll}>
           <img src={arrowDownImg} className={styles.arrowDown} />
