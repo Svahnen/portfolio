@@ -16,6 +16,8 @@ export default class ScrollWrapper extends Component {
 
   componentWillMount () {
     window.addEventListener('scroll', this.handleInput)
+    if (window.innerWidth <= 600) this.setState({ mobile: true })
+    if (window.innerWidth > 600) this.setState({ mobile: false })
     setInterval(() => {
       if (window.innerWidth <= 600) this.setState({ mobile: true })
       if (window.innerWidth > 600) this.setState({ mobile: false })
