@@ -4,12 +4,18 @@ import Navigation from '../components/Navigation'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
 
+// TODO: Fix so about does not snap uppwards when position is set to 'fixed'
+
 export default class AboutMe extends Component {
   render () {
-    const { scroll } = this.props
+    const { scroll, mobile } = this.props
     return (
       <div id={'AboutMe'} className={styles.wrapper}>
-        {scroll < window.innerHeight ? <Navigation /> : <Navigation position='fixed' />}
+        {!mobile && scroll < window.innerHeight
+          ? <Navigation />
+          : !mobile && scroll > window.innerHeight
+            ? <Navigation position='fixed' />
+            : null }
         <div className={scroll > window.innerHeight - window.innerHeight * 0.30 ? classNames(styles.slideIn, styles.content) : styles.content}>
           <h2 className={styles.title}>About me</h2>
           <span className={styles.spanLine}/>
@@ -23,5 +29,6 @@ export default class AboutMe extends Component {
 }
 
 AboutMe.propTypes = {
+  mobile: PropTypes.bool,
   scroll: PropTypes.number
 }

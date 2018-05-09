@@ -12,8 +12,8 @@ export default class SayHi extends Component {
         <div className={scroll > window.innerHeight * 4 - window.innerHeight * 0.30 ? classNames(styles.slideIn, styles.content) : styles.content}>
           <h2 className={styles.title}>Say hi!</h2>
           <span className={styles.spanLine}/>
-          <a className={styles.mailto} href="mailto:hello@jonnysvahn.se"><img src={EmailIcon} /></a>
-          <a className={styles.mailto} href="mailto:hello@jonnysvahn.se">hello@jonnysvahn.se</a>
+          <a className={styles.mailto} href="mailto:svahn.info@gmail.com"><img src={EmailIcon} /></a>
+          <a className={styles.mailto} href="mailto:svahn.info@gmail.com">svahn.info@gmail.com</a>
         </div>
         <p>All rights reserved Jonny Svahn 2018</p>
       </div>

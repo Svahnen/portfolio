@@ -9,7 +9,8 @@ export default class ScrollWrapper extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      scroll: 0
+      scroll: 0,
+      mobile: false
     }
   }
 
@@ -17,11 +18,18 @@ export default class ScrollWrapper extends Component {
     window.addEventListener('scroll', this.handleInput)
    }
 
+   componentDidMount () {
+    setInterval(() => {
+      if (window.innerWidth <= 600) this.setState({ mobile: true })
+      if (window.innerWidth > 600) this.setState({ mobile: false })
+    }, 1000)
+   }
+
   render () {
-    const { scroll } = this.state
+    const { scroll, mobile } = this.state
     return (
   <div className='ScrollWrapper'>
-    <AboutMe scroll={scroll} />
+    <AboutMe scroll={scroll} mobile={mobile} />
     <WhyMe scroll={scroll} />
     <Techniques scroll={scroll} />
     <SayHi scroll={scroll} />
@@ -30,16 +38,16 @@ export default class ScrollWrapper extends Component {
 }
 handleInput = () => {
   if (() => canSetScroll) {
-    console.log('setting scroll')
-  this.setState({ scroll: window.scrollY })
+    this.setState({ scroll: window.scrollY })
   }
 }
+
 }
 
 let canSetScroll = false
 setInterval(() => {
-canSetScroll = true
-setTimeout(() => {
-  canSetScroll = false
-}, 25)
+  canSetScroll = true
+  setTimeout(() => {
+    canSetScroll = false
+  }, 25)
 }, 25)
