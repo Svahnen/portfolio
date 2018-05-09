@@ -10,7 +10,7 @@ export default class ScrollWrapper extends Component {
     super(props)
     this.state = {
       scroll: 0,
-      mobile: false
+      mobile: true
     }
   }
 
