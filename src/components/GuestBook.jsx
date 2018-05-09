@@ -35,6 +35,7 @@ export default class GuestBook extends Component {
           label="Enter your name"
           margin="normal"
           onChange={this.handleInputName}
+          style={{marginTop:'70px'}}
         />
         <Button onClick={() => this.handlePost(this.state.name)} variant="raised" size="small">
         <Save />

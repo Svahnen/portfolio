@@ -23,3 +23,12 @@
 .content p
   font-size: 20px
   font-weight: 300
+  overflow: hidden
+
+@media (min-width: $breakpoint-mobile)
+  .content
+    margin-left: -100%
+    margin-right: 100%
+    transition: 0.5s
+  .slideIn
+    margin: auto 0

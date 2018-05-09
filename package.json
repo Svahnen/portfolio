@@ -22,6 +22,7 @@
   "homepage": "https://github.com/ReactJSResources/react-webpack-babel#readme",
   "dependencies": {
     "babel-polyfill": "6.26.0",
+    "classnames": "^2.2.5",
     "material-ui": "^1.0.0-beta.44",
     "material-ui-icons": "^1.0.0-beta.36",
     "normalize.css": "^7.0.0",

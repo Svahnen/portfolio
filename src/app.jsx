@@ -1,9 +1,6 @@
 import React from 'react'
 import Cover from './components/Cover'
-import AboutMe from './components/AboutMe'
-import WhyMe from './components/WhyMe'
-import SayHi from './components/SayHi'
-import Techniques from './components/Techniques'
+import ScrollWrapper from './components/ScrollWrapper'
 import 'normalize.css'
 import 'styles/base/_main.sass' // Global styles
 import 'styles/base/_common.sass' // Global styles
@@ -11,10 +8,7 @@ import 'styles/base/_common.sass' // Global styles
 const App = () => (
   <div className='App'>
     <Cover />
-    <AboutMe />
-    <WhyMe />
-    <Techniques />
-    <SayHi />
+    <ScrollWrapper />
   </div>
 )
 

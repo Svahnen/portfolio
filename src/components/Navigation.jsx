@@ -19,16 +19,16 @@ function coverScroll (e) {
 }
 
 const Navigation = (props) => {
-  const view = props.view
+  const { view, position } = props
 
   return (<div>
-    {view === 'guestbook' ? <AppBar position="static" style={{background: '#0e4f7e'}}>
+    {view === 'guestbook' ? <AppBar position="fixed" style={{background: '#0e4f7e'}}>
       <Toolbar>
         <ul>
           <li className={styles.navList}><Link to="/">Back</Link></li>
         </ul>
       </Toolbar>
-    </AppBar> : <AppBar position="static" style={{background: '#0e4f7e'}}>
+    </AppBar> : <AppBar position={position === 'fixed' ? 'fixed' : 'static'} style={{background: '#0e4f7e'}}>
       <Toolbar>
         <ul>
           <li className={styles.navList}><a onClick={coverScroll}>Home</a></li>
@@ -40,7 +40,8 @@ const Navigation = (props) => {
   </div>)
 }
 Navigation.propTypes = {
-  view: PropTypes.object
+  view: PropTypes.string,
+  position: PropTypes.string
 }
 
 export default Navigation
