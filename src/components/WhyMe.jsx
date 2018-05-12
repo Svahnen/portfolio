@@ -11,7 +11,7 @@ export default class WhyMe extends Component {
         <div className={scroll > window.innerHeight * 2 - window.innerHeight * 0.30 ? classNames(styles.slideIn, styles.content) : styles.content}>
           <h2 className={styles.title}>Why me?</h2>
           <span className={styles.spanLine}/>
-          <p>I am a person who likes challenges, I have a need to understand and find out how things work. I take pride in knowing I always do my best, and if I see multiple solutions to a problem, I always think through each possible advantage or problem, I always think through eatch possible advantage or problem before I decide which solution I should use.</p>
+          <p>I am a person who likes challenges, I have a need to understand and find out how things work. I take pride in knowing I always do my best, and if I see multiple solutions to a problem, I always think through each possible advantage or problem before I decide which solution I should use.</p>
         </div>
       </div>
     )
