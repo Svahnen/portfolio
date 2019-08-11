@@ -10,8 +10,8 @@
     "lint": "eslint --ext js --ext jsx src || exit 0",
     "dev": " webpack-dashboard -- webpack-dev-server",
     "test": "export NODE_ENV=test && jest",
-    "build-heroku": "./heroku_build.sh",
-    "build-surge": "./surge_build.sh"
+    "build-heroku": "sh ./heroku_build.sh",
+    "build-surge": "sh ./surge_build.sh"
   },
   "repository": {
     "type": "git",
