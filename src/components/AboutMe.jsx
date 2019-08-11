@@ -20,9 +20,26 @@ export default class AboutMe extends Component {
         <div className={scroll > window.innerHeight - window.innerHeight * 0.30 ? classNames(styles.slideIn, styles.content) : styles.content}>
           <h2 className={styles.title}>About me</h2>
           <span className={styles.spanLine}/>
-          <p>I learn  very fast and strive to always use or improve upon best practices. I code responsibly and apply a very thorough mindset when I code.</p>
-          <p>And I really love to code.</p>
-          <p>- Responsive of course!</p>
+          <p>
+            I have always had a huge interest in electronics and what made them work.
+          </p>
+          <p>
+            When I was 6 years old I got a used electric race-car set, it had parts missing and lacked batteries.
+          </p>
+          ⚠️
+          <i>
+          But that did not stop me from using my teeth to strip the cords of an old phone charger and plugging it into a wall outlet.
+          </i>
+          <p>
+            I survived this and many other more or less successful deep dives into how electronics work.
+            After graduating school with an electrical-engineering exam, I worked in the Fire Alarm section for some years, where I programmed different Fire Alarm functions and tested that everything worked like intended.
+          </p>
+          <p>
+            When not spending time with my wife and daughters, I find a challenge in repairing and modding things like old Gameboys.
+          </p>
+          <div className={styles.warning}>
+          ⚠️<i>Do not try this at home!</i>
+          </div>
         </div>
       </div>
     )

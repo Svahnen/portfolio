@@ -54,7 +54,7 @@ const Navigation = (props) => {
           <li className={styles.navList}><a onClick={whyMeScroll}>Why me</a></li>
           <li className={styles.navList}><a onClick={techniquesScroll}>Techniques</a></li>
           <li className={styles.navList}><a onClick={sayHiScroll}>Contact</a></li>
-          <li className={styles.navList}><Link to="/guestbook">Guest Book</Link></li>
+          {/* <li className={styles.navList}><Link to="/guestbook">Guest Book</Link></li> */}
         </ul>
       </Toolbar>
     </AppBar>}

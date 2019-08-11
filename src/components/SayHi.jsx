@@ -4,6 +4,8 @@ import EmailIcon from '../images/email_white_96x96.png'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
 
+// TODO: set current year using JS
+
 export default class SayHi extends Component {
   render () {
     const { scroll } = this.props
@@ -15,7 +17,7 @@ export default class SayHi extends Component {
           <a className={styles.mailto} href="mailto:svahn.info@gmail.com"><img src={EmailIcon} /></a>
           <a className={styles.mailto} href="mailto:svahn.info@gmail.com">svahn.info@gmail.com</a>
         </div>
-        <p>All rights reserved Jonny Svahn 2018</p>
+        <p>All rights reserved Jonny Svahn 2019</p>
       </div>
     )
   }

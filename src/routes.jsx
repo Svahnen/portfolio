@@ -4,15 +4,15 @@ import {
   Route
 } from 'react-router-dom'
 import App from './app'
-import About from './components/About'
-import GuestBook from './components/GuestBook'
+
+// TODO: Make a great Guestbook
+/* import GuestBook from './components/GuestBook' */
 
 const Routes = () => (
   <Router>
     <div>
       <Route exact path="/" component={App}/>
-      <Route path="/about" component={About}/>
-      <Route path="/guestbook" component={GuestBook}/>
+      {/* <Route path="/guestbook" component={GuestBook}/> */}
     </div>
   </Router>
 )
